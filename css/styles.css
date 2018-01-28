@@ -195,3 +195,111 @@ figure {
 .about > p {
   margin: 0;
 }
+
+/* TABLET LAYOUT */
+@media screen and (min-width: 768px) {
+
+  /* NAVIGATION styles */
+  .site-logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: 4.5rem;
+    left: 1rem;
+    width: 10px;
+    height: 10px;
+    margin: 0;
+  }
+
+  .site-nav-item {
+    float: none;
+  }
+
+  main {
+    margin-left: 90px;
+  }
+
+  .movie {
+    width: 100%;
+  }
+
+  .movie-details {
+    width: 56.25rem;
+  }
+
+  .movie-overview {
+    display: block;
+    font-size: 0.8rem;
+  }
+
+  /* FOOTER styles */
+
+  .site-footer {
+    position: relative;
+    margin-left: 100px;
+  }
+
+  .footer-nav {
+    width: 50%;
+  }
+
+  .about {
+    position: absolute;
+    top: 0px;
+    left: 442px;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+  }
+
+}
+
+/* PC LAYOUT */
+@media screen and (min-width: 992px) {
+
+  .movie-poster,
+  .movie-backdrop {
+    display: none;
+  }
+
+  .movie-poster {
+    display: block;
+  }
+
+  .movie-overview {
+    display: none;
+  }
+
+  .movie {
+    float: left;
+    width: 33.3%;
+  }
+
+  .movie:last-child {
+    float: none;
+  }
+  
+  .movie-details {
+    max-width: 100%;
+  }
+
+  .movie:first-child {
+    width: 100%
+  }
+
+  .movie:first-child .movie-backdrop {
+    display: block;
+  }
+
+  .movie:first-child .movie-poster {
+    display: none;
+  }
+
+  .movie:first-child .movie-overview {
+    display: block;
+  }
+
+}
